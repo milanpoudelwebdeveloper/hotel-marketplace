@@ -1,0 +1,33 @@
+.tabs {
+    display: flex;
+    background: gray;
+    width: "900px";
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.tabs-list {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-list {
+    padding: 50px;
+    cursor: pointer;
+}
+
+.tab-panels {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.active-tabpanel {
+    display: block;
+}

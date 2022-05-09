@@ -30,7 +30,7 @@ const login = () => {
           );
           dispatch(loggedInUser(response.data));
           toast.success("Logged in successfully front end");
-          router.push("/");
+          router.push("/dashboard");
         }
       }
     } catch (e) {

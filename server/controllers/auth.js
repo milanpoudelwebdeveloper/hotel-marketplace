@@ -47,6 +47,9 @@ export const login = async (req, res) => {
             email: user.email,
             createdAt: user.createdAt,
             updatedAt: user.updatedAt,
+            stripe_account_id: user.stripe_account_id,
+            stripe_seller: user.stripe_seller,
+            stripe_session: user.stripe_session,
           },
         });
         // return res.status(200).send("Logged in successfully. Thanks");

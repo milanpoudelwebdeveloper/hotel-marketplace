@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-let initialState;
+let initialState = null;
 
 if (typeof window !== "undefined") {
   initialState = JSON.parse(window.localStorage.getItem("authbooking"));

@@ -15,3 +15,13 @@ export const loginUser = async (user) => {
   );
   return response;
 };
+
+//after sign in with stripe update user
+export const updateUserInLocalStorage = async (user, next) => {
+  if (typeof window !== undefined) {
+    let auth = window && JSON.parse(window.localStorage.getItem("authbooking"));
+    auth.user = user;
+    window.localStorage.setItem("authbooking", JSON.stringify(auth));
+    next();
+  }
+};
