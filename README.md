@@ -1,0 +1,1 @@
+A hotel marketplace for posting and listing the hotels, rentals. It contains the payment system and booking system. The project using ReactJS in the frontend and uses Node and mongoDB for the backend.
